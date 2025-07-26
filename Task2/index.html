@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CricketCraze – Learn Cricket Like a Pro!</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+    }
+
+    body {
+      background: #001a33;
+      color: #f0f8ff;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #002244;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+    }
+
+    header h1 {
+      font-size: 1.8em;
+      color: #29b6f6;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #29b6f6;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url("bg.jpeg") center/cover no-repeat;
+      padding: 140px 40px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      color: #81d4fa;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      max-width: 700px;
+      margin: 0 auto 30px;
+    }
+
+    .hero button {
+      background: #29b6f6;
+      border: none;
+      padding: 15px 35px;
+      font-size: 1em;
+      color: #002244;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .hero button:hover {
+      background: #0288d1;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section h3 {
+      font-size: 2.2em;
+      margin-bottom: 30px;
+      color: #81d4fa;
+      text-align: center;
+    }
+
+    .card-box {
+      background: #001d33;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+      font-size: 1.15rem;
+      line-height: 1.9;
+      margin-bottom: 40px;
+    }
+
+    .cast-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 30px;
+    }
+
+    .cast-card {
+      background: #002f4f;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
+      text-align: center;
+      padding-bottom: 15px;
+    }
+
+    .cast-card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .cast-card h4 {
+      margin-top: 15px;
+      font-size: 1.4rem;
+      color: #fff;
+    }
+
+    .cast-card p {
+      font-size: 0.95rem;
+      padding: 0 10px;
+      color: #bbdefb;
+    }
+
+    footer {
+      background: #001122;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      margin-top: 50px;
+      color: #aaa;
+    }
+
+    a {
+      color: #4fc3f7;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>CricketCraze</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#how-it-works">How It Works</a>
+    <a href="#formats">Formats</a>
+    <a href="#roles">Learn Roles</a>
+    <a href="#facts">Fun Facts</a>
+    <a href="#quiz">Quiz</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Learn the Game of Cricket Like a Pro! 🧠🏏</h2>
+  <p>Welcome to CricketCraze — your one-stop platform to understand the game, explore roles, formats, and master the skills that make cricket the heartbeat of millions.</p>
+  <button>Start Learning</button>
+</section>
+
+<section class="section" id="how-it-works">
+  <h3>🧠 How the Game Works</h3>
+  <div class="card-box">
+    <p>Cricket is played between two teams of eleven players. One team bats to score runs, while the other bowls and fields to restrict runs and dismiss batters. Each team gets a turn to bat and bowl, and the team with the higher score wins.</p>
+    <p>The game is played in overs — sets of 6 legal balls bowled by one player. Batters aim to score runs, while bowlers and fielders aim to get them out. The match has formats like Test, ODI, and T20, each demanding unique strategies and pacing.</p>
+  </div>
+</section>
+
+<section class="section" id="formats">
+  <h3>🏏 Cricket Formats Explained</h3>
+  <div class="card-box">
+    <p>Cricket is played in three main formats:</p>
+    <ul>
+      <li><strong>Test:</strong> Played over 5 days, focusing on patience, technique, and endurance.</li>
+      <li><strong>ODI:</strong> One Day Internationals with 50 overs per side. Strategic and balanced format.</li>
+      <li><strong>T20:</strong> 20 overs per side, fast-paced and designed for entertainment.</li>
+    </ul>
+    <p>Understanding formats helps you analyze players, match conditions, and team strategies more deeply.</p>
+  </div>
+</section>
+
+<section class="section" id="roles">
+  <h3>📘 Learn by Player Role</h3>
+
+  <h3 style="color:#4fc3f7; text-align:center; margin: 30px 0 20px;">Batsmen</h3>
+  <div class="card-box">
+    <p>Batsmen are responsible for scoring runs and building a strong foundation for the team. Their techniques include stroke play, defense, and big hitting depending on the format. Openers face the new ball, while middle-order batters consolidate and finishers close the innings. Footwork, concentration, and adaptability define a great batter.</p>
+  </div>
+  <div class="cast-gallery">
+    <div class="cast-card">
+      <img src="kohli.jpeg" alt="Virat Kohli">
+      <h4>Virat Kohli</h4>
+      <p>Known for consistent run-scoring, chase-master mindset, and sharp technique.</p>
+    </div>
+    <div class="cast-card">
+      <img src="rohit.jpeg" alt="Rohit Sharma">
+      <h4>Rohit Sharma</h4>
+      <p>India’s Hitman — famous for six-hitting and double centuries in ODIs.</p>
+    </div>
+  </div>
+
+  <h3 style="color:#4fc3f7; text-align:center; margin: 50px 0 20px;">Bowlers</h3>
+  <div class="card-box">
+    <p>Bowlers are the attacking force of the team. Fast bowlers use speed and bounce, while spinners use turn and deception. Good bowlers vary line and length, read the batsman, and plan dismissals. Their job is to control runs and take wickets to shift momentum in their team’s favor.</p>
+  </div>
+  <div class="cast-gallery">
+    <div class="cast-card">
+      <img src="bumrah.webp" alt="Bumrah">
+      <h4>Jasprit Bumrah</h4>
+      <p>Master of yorkers, death overs, and India’s strike pacer in all formats.</p>
+    </div>
+    <div class="cast-card">
+      <img src="rashid.jpeg" alt="Rashid Khan">
+      <h4>Rashid Khan</h4>
+      <p>Spin sensation from Afghanistan with deadly googlies and economy.</p>
+    </div>
+  </div>
+
+  <h3 style="color:#4fc3f7; text-align:center; margin: 50px 0 20px;">Wicketkeepers</h3>
+  <div class="card-box">
+    <p>Wicketkeepers stand behind the stumps and are key to catching, stumping, and assisting in run-outs. They must be agile, alert, and skilled with the gloves. Modern wicketkeepers are also expected to contribute with the bat, making them dual-role assets to the team.</p>
+  </div>
+  <div class="cast-gallery">
+    <div class="cast-card">
+      <img src="dhoni.jpeg" alt="Dhoni">
+      <h4>MS Dhoni</h4>
+      <p>Legendary keeper, lightning stumps, and a tactical genius as captain.</p>
+    </div>
+    <div class="cast-card">
+      <img src="pant.jpeg" alt="Pant">
+      <h4>Rishabh Pant</h4>
+      <p>India’s fearless new-gen keeper-batsman with aggressive intent.</p>
+    </div>
+  </div>
+
+  <h3 style="color:#4fc3f7; text-align:center; margin: 50px 0 20px;">All-Rounders</h3>
+  <div class="card-box">
+    <p>All-Rounders balance the side with both batting and bowling skills. They can rescue innings or break partnerships, and are especially useful in limited-over formats. Some lean more toward batting, others toward bowling — but both offer flexibility and strategic depth to a team.</p>
+  </div>
+  <div class="cast-gallery">
+    <div class="cast-card">
+      <img src="jadeja.jpeg" alt="Jadeja">
+      <h4>Ravindra Jadeja</h4>
+      <p>Sharp fielder, dependable bat, and a left-arm spin asset for India.</p>
+    </div>
+    <div class="cast-card">
+      <img src="stokes.jpeg" alt="Stokes">
+      <h4>Ben Stokes</h4>
+      <p>England’s clutch performer — fearless under pressure with both bat and ball.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="facts">
+  <h3>💡 Fun Cricket Facts</h3>
+  <div class="card-box">
+    <ul>
+      <li>Sachin Tendulkar played international cricket for 24 years!</li>
+      <li>Virat Kohli is First Player to Score 50+ Runs in 5 Consecutive World Cup Matches</li>
+      <li>MS Dhoni is the only captain to win all ICC trophies.</li>
+      <li>AB de Villiers once scored a 100 in just 31 balls in ODIs.</li>
+      <li>The first ever international cricket match was played in 1844.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="quiz">
+  <h3>📊 Test Your Knowledge</h3>
+  <div class="card-box" style="text-align:center;">
+    <p>Coming Soon: Interactive Quizzes to test what you've learned about cricket!</p>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 CricketCraze — Learn. Play. Master the Game.</p>
+</footer>
+
+</body>
+</html>
